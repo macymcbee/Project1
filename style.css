@@ -1,10 +1,18 @@
-background{
-  color:black;
+
+body{
+  background-color:white;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 
-
 h1{
-  color:brown;
-  font-size: 12px;
+  font-size: 45px;
+  text-align:center;
+  margin-top: 20%;
+  margin-bottom: 20%;
+}
+
+.arrow{
+  align-items:center;
+  color: black;
 }
