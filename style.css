@@ -1,0 +1,60 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+    background-color:antiquewhite;
+}
+
+
+h1{
+    font-size:larger;
+    color:black;
+    margin-top:0;
+    padding-top: 5%;
+    text-align:center;
+}
+
+<style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+    html, body {
+      scroll-behavior: smooth;
+    }
+    section {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 3rem;
+      color: white;
+      opacity: 0;
+      transition: opacity 1.5s ease;
+    }
+    section.visible {
+      opacity: 1;
+    }
+    #home { background: #3498db; }
+    #about { background: #2ecc71; opacity: 1; }
+    #services { background: #f39c12; opacity: 1; }
+    #contact { background: #e74c3c; opacity: 1; }
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.7);
+      display: flex;
+      justify-content: center;
+      padding: 1rem 0;
+      z-index: 1000;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }

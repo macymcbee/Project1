@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Alice in Wonderland</h1>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    
+      <section id="home">Home Section</section>
+      <section id="about">About Section</section>
+      <section id="services">Services Section</section>
+      <section id="contact">Contact Section</section>
+    
+      <script>
+        const homeSection = document.getElementById('home');
+    
+        const observer = new IntersectionObserver(entries => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('visible');
+            }
+          });
+        }, {
+          threshold: 0.5
+        });
+    
+        observer.observe(homeSection);
+      </script>
+      
+    <p>Alice is sitting on a bench with her sister, and she is really rather bored. A white Rabbit hurrying past, anxiously checking his pocket watch and muttering, “Oh dear! Oh dear! I shall be late!” Intrigued, Alice follows him through a rabbit hole and tumbles down a long tunnel.</p>
+</body>
+</html>
