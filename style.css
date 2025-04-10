@@ -15,4 +15,7 @@ h1{
 .arrow{
   align-items:center;
   color: black;
+  font-size: 2rem;
+  margin-top: 2rem;
+  animation: bounce 2s infinite;
 }
