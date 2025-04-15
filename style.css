@@ -1,12 +1,13 @@
 
 body{
-  background-color:white;
+  background-image: url(ivory-off-white-paper-texture.jpg);
   font-family: 'Times New Roman', Times, serif;
 }
 
 
 h1{
-  font-size: 45px;
+  font-style: italic;
+  font-size: 50px;
   text-align:center;
   margin-top: 20%;
   margin-bottom: 20%;
@@ -34,3 +35,4 @@ h1{
   align-items: center;
   height: 50vh; 
 }
+
