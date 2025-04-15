@@ -13,14 +13,6 @@ h1{
   margin-bottom: 20%;
 }
 
-.arrow{
-  text-align:center;
-  color: black;
-  font-size: 1.5rem;
-  margin-top: 2rem;
-  animation: bounce 2s infinite;
-}
-
 .alice{
   display: flex;
   justify-content: center;
@@ -35,4 +27,68 @@ h1{
   align-items: center;
   height: 50vh; 
 }
+
+.arrow{
+  text-align:center;
+  color: black;
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  animation: bounce 2s infinite;
+}
+
+.down-alice{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh; 
+
+}
+
+.down-background{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fill;
+}
+.scroll-container {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: fill;
+  overflow-x: auto;
+}
+
+
+.scroll-item{
+  display: inline-block;
+  white-space: nowrap;
+  box-sizing: border-box;
+  animation: scroll-left 5s linear forwards;
+}
+
+@keyframes scroll-left {
+  0% {
+      transform: translateX(-100%);
+  }
+  100% {
+      transform: translateX(100%);
+  }
+}
+
+
+.scroll-item2{
+  display: inline-block;
+  white-space: nowrap;
+  box-sizing: border-box;
+  animation: scroll-left 2.5s linear forwards;
+}
+
+@keyframes scroll-left {
+  0% {
+      transform: translateX(-100%);
+  }
+  100% {
+      transform: translateX(100%);
+  }
+}
+
 
