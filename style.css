@@ -4,6 +4,16 @@ body{
   font-family: 'Times New Roman', Times, serif;
 }
 
+.point{
+  text-align: center;
+  margin-top:auto;
+  margin-bottom: 20px;
+  animation: ease-in-out 2s infinite;
+}
+
+p{
+  text-align: center;
+}
 
 h1{
   font-style: italic;
@@ -20,7 +30,7 @@ h2{
   text-align:center;
 }
 
-.alice{
+/* .alice{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -33,15 +43,51 @@ h2{
   justify-content: center;
   align-items: center;
   height: 50vh; 
+} */
+
+body {
+  background: #fdfaf5;
+  font-family: serif;
+  overflow-x: hidden;
 }
 
-.arrow{
-  text-align:center;
-  color: black;
-  font-size: 1.5rem;
-  margin-top: 2rem;
-  animation: bounce 2s infinite;
+.scene {
+  position: relative;
+  width: 100vw;
+  height: 50vh;
+  overflow: hidden;
 }
+
+.text{
+  text-align: center;
+  font-size: 25px;
+  margin-top: 10px;
+}
+
+.character {
+  position: absolute;
+  bottom: 30px;
+  width: 180px;
+}
+
+.rabbit {
+  animation: runRight 6s linear infinite;
+}
+
+.alice {
+  animation: runRight 6s linear infinite;
+  animation-delay: 1s;
+}
+
+@keyframes runRight {
+  0% {
+    left: -150px;
+  }
+  100% {
+    left: 110%;
+  }
+}
+
 
 .down-alice{
   display: flex;
@@ -81,7 +127,7 @@ h2{
   padding: 40px;
 }
 
-@keyframes scroll-left {
+/* @keyframes scroll-left {
   0% {
       transform: translateX(-100%);
   }
@@ -166,4 +212,4 @@ section .air.air4{
   100%{
     background-position-y: 100%; 
   }
-}
+} */
