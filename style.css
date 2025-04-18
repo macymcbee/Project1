@@ -213,3 +213,64 @@ section .air.air4{
     background-position-y: 100%; 
   }
 } */
+
+
+.scene2 {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background: url(Background.svg);
+  animation: scrollBg 5s linear infinite;
+  overflow: hidden;
+}
+
+@keyframes scrollBg {
+  0% { background-position: 0 0; }
+  100% { background-position: 0 100vh; }
+}
+
+.alice2 {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  width: 120px;
+  transform: translate(-50%, -50%) rotate(0deg);
+  animation: tumble 4s infinite linear;
+  z-index: 2;
+}
+
+@keyframes tumble {
+  0% { transform: translate(-50%, -50%) rotate(0deg); }
+  100% { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+.text-box2 {
+  position: absolute;
+  left: 20px;
+  top: 50px;
+  color: white;
+  width: 250px;
+  font-size: 16px;
+  line-height: 1.5;
+  z-index: 2;
+}
+
+.letter {
+  position: absolute;
+  font-size: 80px;
+  opacity: 1;
+  font-weight: bold;
+  animation: floatLetter 10s linear infinite;
+}
+
+@keyframes floatLetter {
+  0% { top: -100px; transform: rotate(0deg); }
+  100% { top: 110vh; transform: rotate(360deg); }
+}
+
+/* Randomize letters */
+.l1 { left: 5%; animation-delay: 0s; }
+.l2 { left: 40%; animation-delay: 3s; }
+.l3 { left: 60%; animation-delay: 5s; }
+.l4 { left: 70%; animation-delay: 7s; }
+.l5 { left: 90%; animation-delay: 9s; }
