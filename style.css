@@ -1,34 +1,13 @@
 /* Page 1 */
-
-.backgroundimage{
-  background-image: url(Backgroundimage.png);
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.arrow{
-  text-align: center;
-  margin-top:auto;
-  animation: ease-in-out 2s infinite;
-}
-
-.next{
-  text-align: right;
-}
 p{
   text-align: center;
   font-family: 'Times New Roman', Times, serif;
 }
 
-h1{
-  font-style: italic;
-  font-size: 50px;
-  text-align:center;
-  margin-top: 20%;
-  margin-bottom: 20%;
+.opening{
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
 }
 
 h2{
@@ -40,7 +19,7 @@ h2{
 
 
 body{
-  background: #fdfaf5;
+  background: white;
   font-family: serif;
   overflow-x: hidden;
 }
