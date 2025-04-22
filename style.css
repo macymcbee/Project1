@@ -1,5 +1,12 @@
 /* Page 1 */
 
+.backgroundimage{
+  background-image: url(Backgroundimage.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .arrow{
   text-align: center;
   margin-top:auto;
