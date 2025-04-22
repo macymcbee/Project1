@@ -8,6 +8,7 @@
 
 p{
   text-align: center;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 h1{
@@ -40,6 +41,8 @@ body{
 }
 
 .text{
+  font-family: 'Times New Roman', Times, serif;
+  text-decoration: none;
   text-align: center;
   font-size: 25px;
   margin-top: 20px;
@@ -189,7 +192,8 @@ body{
 }
 
 .text3{
-  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+  text-decoration: none;
   font-size: 20px;
   max-width: 300px;
   transition: font-size 1.5s ease;
@@ -257,6 +261,8 @@ input[type="radio"]{
 }
 
 .text4{
+  font-family: 'Times New Roman', Times, serif;
+  text-decoration: none;
   background-color: beige;
   text-align: center;
   font-size: 25px;
