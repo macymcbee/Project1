@@ -97,7 +97,7 @@ body{
 }
 
 .tunnel{
-  background-image: url('Background.svg');
+  background-image: url("Screenshot\ 2025-04-22\ 141216.png");
   margin: 0;
   padding: 0;
   background-size: cover;
@@ -254,4 +254,12 @@ input[type="radio"]{
 /* Page 4 */
 .cards{
   background-image: url(giphy-2719422389.gif);
+}
+
+.text4{
+  background-color: beige;
+  text-align: center;
+  font-size: 25px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
