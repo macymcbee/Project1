@@ -2,6 +2,8 @@
 
 .backgroundimage{
   background-image: url(Backgroundimage.png);
+  width: 100%;
+  height: 100%;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -13,6 +15,9 @@
   animation: ease-in-out 2s infinite;
 }
 
+.next{
+  text-align: right;
+}
 p{
   text-align: center;
   font-family: 'Times New Roman', Times, serif;
@@ -126,6 +131,8 @@ body{
   width: 100vw;
   height: 100vh;
   background: url(Background.svg);
+  background-size: cover;
+  background-repeat: repeat-y;
   animation: scrollBg 5s linear infinite;
   overflow: hidden;
 }
@@ -275,4 +282,34 @@ input[type="radio"]{
   font-size: 25px;
   margin-top: 20px;
   margin-bottom: 20px;
+}
+
+.body4 {
+  margin: 0;
+  height: 500vh; /* Makes the page scrollable */
+  overflow-x: hidden;
+}
+
+.scroll-container4 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.background4 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.alice4 {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  width: 100px;
+  transition: left 0.1s;
 }
