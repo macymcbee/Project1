@@ -1,13 +1,8 @@
+/* Page 1 */
 
-body{
-  background-image: url(ivory-off-white-paper-texture.jpg);
-  font-family: 'Times New Roman', Times, serif;
-}
-
-.point{
+.arrow{
   text-align: center;
   margin-top:auto;
-  margin-bottom: 20px;
   animation: ease-in-out 2s infinite;
 }
 
@@ -30,28 +25,14 @@ h2{
   text-align:center;
 }
 
-/* .alice{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 50vh; 
-}
 
-
-.white-rabbit{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 50vh; 
-} */
-
-body {
+body{
   background: #fdfaf5;
   font-family: serif;
   overflow-x: hidden;
 }
 
-.scene {
+.scene{
   position: relative;
   width: 100vw;
   height: 50vh;
@@ -61,25 +42,26 @@ body {
 .text{
   text-align: center;
   font-size: 25px;
-  margin-top: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
-.character {
+.character{
   position: absolute;
   bottom: 30px;
   width: 180px;
 }
 
-.rabbit {
+.rabbit{
   animation: runRight 6s linear infinite;
 }
 
-.alice {
+.alice{
   animation: runRight 6s linear infinite;
   animation-delay: 1s;
 }
 
-@keyframes runRight {
+@keyframes runRight{
   0% {
     left: -150px;
   }
@@ -89,6 +71,7 @@ body {
 }
 
 
+/* Page 2 */
 .down-alice{
   display: flex;
   justify-content: center;
@@ -98,7 +81,7 @@ body {
 }
 
   
-.scroll-container {
+.scroll-container{
   display: grid;
   grid-auto-flow: column;
   grid-auto-columns: fill;
@@ -127,95 +110,8 @@ body {
   padding: 40px;
 }
 
-/* @keyframes scroll-left {
-  0% {
-      transform: translateX(-100%);
-  }
-  100% {
-      transform: translateX(100%);
-  }
-}
 
-
-.scroll-item2{
-  display: inline-block;
-  white-space: nowrap;
-  box-sizing: border-box;
-  animation: scroll-left 2.5s linear forwards;
-}
-
-@keyframes scroll-left {
-  0% {
-      transform: translateX(-100%);
-  }
-  100% {
-      transform: translateX(100%);
-  }
-}
-
-section{
-  background: url(Background.svg);
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  overflow: hidden;
-}
-section .air{
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100px;
-  background: url(Background.svg);
-  background-size: 1000px 100px
-}
-section .air.air1{
-  animation: wave 30s linear infinite;
-  z-index: 1000;
-  opacity: 1;
-  animation-delay: 0s;
-  bottom: 0;
-}
-section .air.air2{
-  animation: wave2 15s linear infinite;
-  z-index: 999;
-  opacity: 0.5;
-  animation-delay: -5s;
-  bottom: 50px;
-}
-section .air.air3{
-  animation: wave 30s linear infinite;
-  z-index: 998;
-  opacity: 0.2;
-  animation-delay: -2s;
-  bottom: 50px;
-}
-section .air.air4{
-  animation: wave2 10s linear infinite;
-  z-index: 997;
-  opacity: 0.7;
-  animation-delay: -5s;
-  bottom: 50px;
-}
-@keyframes wave{
-  0%{
-    background-position-y: 0%; 
-  }
-  100%{
-    background-position-y: 100%; 
-  }
-}
-@keyframes wave2{
-  0%{
-    background-position-y: 0%; 
-  }
-  100%{
-    background-position-y: 100%; 
-  }
-} */
-
-
-.scene2 {
+.scene2{
   position: relative;
   width: 100vw;
   height: 100vh;
@@ -229,7 +125,7 @@ section .air.air4{
   100% { background-position: 0 100vh; }
 }
 
-.alice2 {
+.alice2{
   position: absolute;
   top: 40%;
   left: 50%;
@@ -239,12 +135,12 @@ section .air.air4{
   z-index: 2;
 }
 
-@keyframes tumble {
+@keyframes tumble{
   0% { transform: translate(-50%, -50%) rotate(0deg); }
   100% { transform: translate(-50%, -50%) rotate(360deg); }
 }
 
-.text-box2 {
+.text-box2{
   position: absolute;
   left: 20px;
   top: 50px;
@@ -255,22 +151,107 @@ section .air.air4{
   z-index: 2;
 }
 
-.letter {
+.letter{
   position: absolute;
   font-size: 80px;
-  opacity: 1;
+  opacity: .5;
   font-weight: bold;
   animation: floatLetter 10s linear infinite;
 }
 
-@keyframes floatLetter {
-  0% { top: -100px; transform: rotate(0deg); }
-  100% { top: 110vh; transform: rotate(360deg); }
+@keyframes floatLetter{
+  0% {top: -100px; transform: rotate(0deg);}
+  100% {top: 110vh; transform: rotate(360deg);}
 }
 
 /* Randomize letters */
-.l1 { left: 5%; animation-delay: 0s; }
-.l2 { left: 40%; animation-delay: 3s; }
-.l3 { left: 60%; animation-delay: 5s; }
-.l4 { left: 70%; animation-delay: 7s; }
-.l5 { left: 90%; animation-delay: 9s; }
+.l1 {left: 5%; animation-delay: none;}
+.l2 { left: 40%; animation-delay: none;}
+.l3 {left: 60%; animation-delay: none;}
+.l4 {left: 70%; animation-delay: none;}
+.l5 {left: 90%; animation-delay: none;}
+
+
+/* Page 3 */
+
+.body3{
+  background-color: #fff7ad;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 2rem;
+  overflow: hidden;
+}
+
+.scene3{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.text3{
+  font-weight: bold;
+  font-size: 20px;
+  max-width: 300px;
+  transition: font-size 1.5s ease;
+}
+
+.label{
+  cursor: pointer;
+  position: absolute;
+  bottom: 120px;
+  width: 100px;
+  z-index: 2;
+}
+
+.cookie-label{
+  left: 250px;
+  width: 160px;
+}
+
+.bottle-label{
+  left: 500px;
+  width: 160px;
+}
+
+.label img{
+  width: 100%;
+  transition: transform 0.3s;
+}
+
+.alice3{
+  position: absolute;
+  bottom: 60px;
+  right: 160px;
+  width: 300px;
+  transition: transform 1.5s ease;
+}
+
+
+    /* Hide the radio buttons */
+input[type="radio"]{
+  display: none;
+    }
+
+    /* Default state: small Alice */
+    #shrink:checked ~ .scene3 .alice3{
+      transform: scale(1);
+    }
+
+    #shrink:checked ~ .scene3 .text3{
+      font-size: 20px;
+    }
+
+    /* When grow is selected */
+    #grow:checked ~ .scene3 .alice3{
+      transform: scale(5);
+    }
+
+    #grow:checked ~ .scene3 .text3{
+      font-size: 12px;
+    }
+
+
+/* Page 4 */
+.cards{
+  background-image: url(giphy-2719422389.gif);
+}
