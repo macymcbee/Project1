@@ -22,6 +22,8 @@ body{
   background: white;
   font-family: serif;
   overflow-x: hidden;
+  margin: 0;
+  padding: 0;
 }
 
 .scene{
@@ -54,6 +56,46 @@ body{
   animation: runRight 6s linear infinite;
   animation-delay: 1s;
 }
+
+
+.next-button{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.nav-wrapper {
+  position: fixed;
+  bottom: 20px;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+  box-sizing: border-box;
+  pointer-events: none;
+}
+
+.nav-link {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px 20px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  font-family: 'Times New Roman', Times, serif;
+  pointer-events: auto;
+  transition: background-color 0.3s;
+}
+
+.nav-link:hover {
+  background-color: rgba(255, 255, 255, 1);
+}
+
+
 
 @keyframes runRight{
   0% {
@@ -90,36 +132,24 @@ body{
   animation: scroll-left 5s linear forwards;
 }
 
-.tunnel{
-  background-image: url("Screenshot\ 2025-04-22\ 141216.png");
-  margin: 0;
-  padding: 0;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed; /* keeps the image fixed on scroll */
-  font-family: Arial, sans-serif;
-  color: white;
-  text-align: center;
-  padding: 40px;
-}
-
 
 .scene2{
   position: relative;
-  width: 100vw;
+  background: url("Background\ 2.png");
+  background-color: #1e1e4a;
+  background-size: 100% 100%;
+  background-position: center;
   height: 100vh;
-  background: url(Background.svg);
-  background-size: cover;
-  background-repeat: repeat-y;
+  width: 100vw;
   animation: scrollBg 5s linear infinite;
   overflow: hidden;
 }
 
+
 @keyframes scrollBg {
-  0% { background-position: 0 0; }
-  100% { background-position: 0 100vh; }
-}
+  0% { background-position: center 0; }
+  100% { background-position: center 100vh; }
+} 
 
 .alice2{
   position: absolute;
@@ -137,6 +167,11 @@ body{
 }
 
 .text-box2{
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 20px;
+  margin: 20px;
+  width: fit-content;
+  border-radius: 10px;
   position: absolute;
   left: 20px;
   top: 50px;
@@ -160,7 +195,6 @@ body{
   100% {top: 110vh; transform: rotate(360deg);}
 }
 
-/* Randomize letters */
 .l1 {left: 5%; animation-delay: none;}
 .l2 { left: 40%; animation-delay: none;}
 .l3 {left: 60%; animation-delay: none;}
@@ -171,7 +205,7 @@ body{
 /* Page 3 */
 
 .body3{
-  background-color: #fff7ad;
+  background-color: #f4cce1;
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 2rem;
@@ -185,6 +219,11 @@ body{
 }
 
 .text3{
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 20px;
+  margin: 20px;
+  width: fit-content;
+  border-radius: 10px;
   font-family: 'Times New Roman', Times, serif;
   text-decoration: none;
   font-size: 20px;
@@ -224,28 +263,25 @@ body{
 }
 
 
-    /* Hide the radio buttons */
 input[type="radio"]{
   display: none;
-    }
+}
 
-    /* Default state: small Alice */
-    #shrink:checked ~ .scene3 .alice3{
-      transform: scale(1);
-    }
+#shrink:checked ~ .scene3 .alice3{
+  transform: scale(1);
+}
 
-    #shrink:checked ~ .scene3 .text3{
-      font-size: 20px;
-    }
+#shrink:checked ~ .scene3 .text3{
+  font-size: 20px;
+}
 
-    /* When grow is selected */
-    #grow:checked ~ .scene3 .alice3{
-      transform: scale(5);
-    }
+#grow:checked ~ .scene3 .alice3{
+  transform: scale(5);
+}
 
-    #grow:checked ~ .scene3 .text3{
-      font-size: 12px;
-    }
+#grow:checked ~ .scene3 .text3{
+  font-size: 12px;
+}
 
 
 /* Page 4 */
@@ -265,7 +301,7 @@ input[type="radio"]{
 
 .body4 {
   margin: 0;
-  height: 500vh; /* Makes the page scrollable */
+  height: 500vh;
   overflow-x: hidden;
 }
 
